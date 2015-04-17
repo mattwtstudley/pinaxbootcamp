@@ -92,6 +92,7 @@ TEMPLATE_CONTEXT_PROCESSORS = [
     "django.contrib.messages.context_processors.messages",
     "pinax_theme_bootstrap.context_processors.theme",
     "pinaxbootcamp.context_processors.settings",
+    "account.context_processors.account",
 ]
 
 
@@ -101,6 +102,8 @@ MIDDLEWARE_CLASSES = [
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
+    "account.middleware.LocaleMiddleware",
+    "account.middleware.TimezoneMiddleware",
 ]
 
 ROOT_URLCONF = "pinaxbootcamp.urls"
@@ -127,6 +130,7 @@ INSTALLED_APPS = [
 
     # external
     "pinax.blog",
+    "account",
 
     # project
     "pinaxbootcamp",
