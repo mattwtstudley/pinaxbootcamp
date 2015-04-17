@@ -11,9 +11,12 @@
                     <a href="{% url "blog" %}">{{ SITE_NAME }}</a>
                 </h1>
                 <p class="lead">
-                    This is where you can list your bio, add links
-                    etc., by editing the <code>pinax/blog/blog_base.html</code>
-                    template.
+                    Welcome to Matt's Pinax Bootcamp.
+                </p>
+
+                <p>
+                    Want to sign up? <a class="btn btn-success" href="{% url "account_signup" %}"
+                                        role="button">Let's do it.</a>
                 </p>
             {% endblock %}
         </div>
