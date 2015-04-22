@@ -2,3 +2,5 @@ Django==1.7.4
 pinax-theme-bootstrap==5.7.2
 pinax-blog==4.0.2
 pytz==2014.10
+django-user-accounts
+psycopg2
