@@ -4,3 +4,4 @@ pinax-blog==4.0.2
 pytz==2014.10
 django-user-accounts
 psycopg2
+metron

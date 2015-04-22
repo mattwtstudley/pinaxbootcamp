@@ -132,6 +132,9 @@ INSTALLED_APPS = [
     "pinax.blog",
     "account",
 
+    #analytics
+    "metron",
+
     # project
     "pinaxbootcamp",
 ]
@@ -170,3 +173,13 @@ FIXTURE_DIRS = [
 ]
 
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+METRON_SETTINGS = {
+    "mixpanel": {
+        1: "b18204ebc6c21bb99af73417e7081e22",
+    },
+
+    "google": {
+        1: "UA-62140011-1",
+    },
+}
