@@ -1,5 +1,7 @@
 {% extends "site_base.html" %}
 
+{% load metron_tags %}
+
 {% block body_class %}blog{% endblock %}
 
 
@@ -18,10 +20,21 @@
                     Want to sign up? <a class="btn btn-success" href="{% url "account_signup" %}"
                                         role="button">Let's do it.</a>
                 </p>
+                <p>
+                    Atom feed available at:
+                </p>
+                <p>
+                    <a href="{% url "blog_feed" "all" "atom" %}">
+                        <span class="label label-primary">
+                            <span class="glyphicon glyphicon-bookmark"></span> Atom Feed
+                        </span>
+                    </a>
+                </p>
             {% endblock %}
         </div>
         <div class="col-md-8 blog-content">
             {% block content %}{% endblock %}
         </div>
     </div>
+    {%  analytics %}
 {% endblock %}
